@@ -39,7 +39,13 @@ const swiper = new Swiper('.swiper-container', {
   },
   mousewheel: true,
   keyboard: true,
-});
+  breakpoints: {
+    767: {
+      slidesPerView:2,
+      setWrapperSize:true
+    }
+  }
+})
 
 /* SCROLLREVEAL: MOSTRAR ELEMENTOS QUANDO DER SCROLL NA PÁGINA */
 
@@ -55,11 +61,11 @@ scrollReveal.reveal(
   #about .image, #about .text,
   #services header, #services .card,
   #testimonials header, #testimonials .testimonials,
-  #contact .text, #contact .links  
+  #contact .text, #contact .links,  
   #footer .lbrand, footer .social
   `, 
   { interval:100 }
-  )
+)
 
 /* BOTÃO VOLTAR PARA O TOPO */  
 function backToTop() {
