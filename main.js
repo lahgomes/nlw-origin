@@ -48,7 +48,6 @@ const swiper = new Swiper('.swiper-container', {
 })
 
 /* SCROLLREVEAL: MOSTRAR ELEMENTOS QUANDO DER SCROLL NA PÁGINA */
-
 const scrollReveal = ScrollReveal ({
   origin: 'top',
   distance: '30px',
@@ -80,9 +79,7 @@ function backToTop() {
 
 /* Menu ativo conforme a seção visível na página */  
 const sections = document.querySelectorAll('main section[id]')
-
-function activateMenuAtCurrentSection {
-
+function activateMenuAtCurrentSection () {
   const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4
 
   for ( const section of sections ) {
